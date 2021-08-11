@@ -20,25 +20,25 @@
 
 
 
-// order of middleware calls,
+// // order of middleware calls,
 
-var express = require('express');
-var app = express();
+// var express = require('express');
+// var app = express();
 
-// First middleware before response is sent
-app.use((req,res,next)=>{
-    console.log('start');
-    next();
-});
+// // First middleware before response is sent
+// app.use((req,res,next)=>{
+//     console.log('start');
+//     next();
+// });
 
-// Route handler
-app.get('/',(req,res,next)=>{
-    console.log('middle');
-    next();
-});
+// // Route handler
+// app.get('/',(req,res,next)=>{
+//     console.log('middle');
+//     next();
+// });
 
-app.use('/',(req,res)=>{
-    console.log('end')
-});
+// app.use('/',(req,res)=>{
+//     console.log('end')
+// });
 
-app.listen(3000)
+// app.listen(3000);
